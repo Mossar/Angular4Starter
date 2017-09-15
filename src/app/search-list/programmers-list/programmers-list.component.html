@@ -1,6 +1,6 @@
 <div class="programmers-list">
   <ul class="list-unstyled">
-    <li *ngFor="let programmer of displaySearchedProgrammers()">
+    <li *ngFor="let programmer of displaySearchedProgrammers()" [routerLink]="['/programmer', programmer.name]">
       <div class="row">
         <div class="col-3">
           <img [src]="programmer.photo" />

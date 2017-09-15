@@ -1,6 +1,6 @@
 import { Component, Input } from "@angular/core";
 import { Http } from "@angular/http";
-import { Programmer } from "./programmer.interface";
+import { Programmer } from "../../../shared/programmer.interface";
 
 @Component({
   selector: "programmers-list",

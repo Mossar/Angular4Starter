@@ -1,6 +1,10 @@
 <div class="container app-container">
-  <search-bar [(searchText)]="searchText"></search-bar>
-  <tags-filter [(searchTag)]="searchTag"></tags-filter>
-  {{ searchTag }}
-  <programmers-list [searchText]="searchText" [searchTag]="searchTag"></programmers-list>
+
+  <ul class="list-inline">
+    <li class="list-inline-item"><a [routerLink]="['/dashboard']">Strona główna</a></li>
+    <li class="list-inline-item"><a [routerLink]="['/search']">Wyszukiwarka</a></li>
+  </ul>
+
+  <router-outlet></router-outlet>
+
 </div>
