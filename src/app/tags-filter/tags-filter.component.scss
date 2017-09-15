@@ -1,0 +1,12 @@
+.tags-filter {
+  padding: 10px 0px;
+  ul {
+    li {
+      cursor: pointer;
+      &:hover {
+        background: #555;
+        color: white;
+      }
+    }
+  }
+}

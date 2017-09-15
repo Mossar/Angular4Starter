@@ -1,0 +1,19 @@
+<div class="programmers-list">
+  <ul class="list-unstyled">
+    <li *ngFor="let programmer of displaySearchedProgrammers()">
+      <div class="row">
+        <div class="col-3">
+          <img [src]="programmer.photo" />
+        </div>
+        <div class="col-9">
+          <h5>{{ programmer.name }}</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item" *ngFor="let tag of programmer.tags">
+              {{ tag }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

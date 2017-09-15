@@ -1,0 +1,8 @@
+<div class="tags-filter">
+  <ul class="btn-group">
+    <li *ngFor="let tag of tags" class="btn btn-secondary"
+        (click)="onClicked(tag)" [ngClass]="{ 'active': searchTag == tag }">
+      {{ tag }}
+    </li>
+  </ul>
+</div>
