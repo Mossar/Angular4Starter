@@ -10,6 +10,7 @@ import { App } from './app.component';
 import { Dashboard } from './dashboard/dashboard.component';
 import { SearchList } from './search-list/search-list.component';
 import { ProgrammerInfo } from './programmer-info/programmer-info.component';
+import { PageNotFound } from './page-not-found/page-not-found.component';
 
 import { SearchBar } from './search-list/search-bar/search-bar.component';
 import { ProgrammersList } from './search-list/programmers-list/programmers-list.component';
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
   { path: '',
     redirectTo: '/dashboard',
     pathMatch: 'full'
-  }
+  },
+  { path: '**', component: PageNotFound }
 ];
 
 @NgModule({
@@ -35,6 +37,7 @@ const appRoutes: Routes = [
     App,
     Dashboard,
     SearchList,
+    PageNotFound,
     ProgrammerInfo,
     SearchBar,
     ProgrammersList,

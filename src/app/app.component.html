@@ -1,10 +1,19 @@
+<!-- Should've been moved to header component -->
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/dashboard']">Strona główna</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/search']">Lista programistów</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <div class="container app-container">
-
-  <ul class="list-inline">
-    <li class="list-inline-item"><a [routerLink]="['/dashboard']">Strona główna</a></li>
-    <li class="list-inline-item"><a [routerLink]="['/search']">Wyszukiwarka</a></li>
-  </ul>
-
   <router-outlet></router-outlet>
-
 </div>
